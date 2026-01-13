@@ -1,0 +1,282 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", "roboto";
+  width: 100%;
+
+
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 80px;
+  background-color: rgb(255, 228, 196);
+  box-shadow: 0px 0px 10px rgb(244, 23, 214);
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+
+#navbar li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
+  transition: 0.7s;
+
+}
+
+#navbar li a:hover {
+  color: aquamarine;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 25px;
+  width: 40%;
+  height: 3px;
+  background: rgb(13, 255, 174);
+  transition: all 0.5s;
+}
+
+#menu {
+  display: none;
+}
+
+#cancel {
+  display: none;
+}
+.container2 table td{
+  width: 100px;
+  text-align: center;
+}
+tbody td img{
+  width: 70px;
+}
+tbody td{
+  padding: 4px;
+}
+tbody td input{
+  width: 50px;
+}
+table{
+  background-color: rgb(214, 178, 130);
+}
+input{
+  border-radius: 20px;
+  padding: 6px;
+  border: none;
+}
+thead td{
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-size: 20px;
+  text-shadow: 0 0 15px aquamarine;
+}
+.container3{
+  width: 30%;
+  
+}
+.container3 .header input{
+  border: 2px solid black;
+  
+ 
+
+}
+.container3 .header{
+  margin-left: 50px;
+  padding: 10px;
+}
+button{
+  width: 75px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: rgb(10, 162, 109);
+}
+.cart{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px;
+}
+.container4{
+  width: 40%;
+   border: 1px solid gray;
+   background-color: rgb(152, 148, 148);
+  
+}
+.container4 table{
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  background-color: aliceblue;
+  
+
+
+}
+.container4 table td{
+  border: 1px solid gray;
+}
+.container4 h2{
+  text-align: center;
+}
+.container4 button{
+  width: 30%;
+  background-color: rgb(10, 162, 109);
+  display: flex;
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+@media(max-width:860px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 0px 0px 10px;
+    background-color: rgb(117, 116, 115);
+    box-shadow: 0 40 60px rgba(0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    width: 200px;
+    transition: 0.4s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 20%;
+  }
+
+  #menu {
+    font-size: 40px;
+    display: flex;
+  }
+
+  #cancel {
+    font-size: 40px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+  }
+}
+
+@media(max-width:420px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 80px 0px 0px 10px;
+    background: rgb(214, 213, 213);
+    border-radius: 20px 0px 0px 20px;
+    box-shadow: 0 40 60px rgba(0, 0, 0);
+    position: fixed;
+    top: 0;
+    right: -200px;
+    height: 100vh;
+    width: 160px;
+    transition: 0.4s;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+
+  #navbar li {
+    margin-bottom: 10%;
+    background-color: rgb(58, 33, 182);
+    border-radius: 30px;
+  }
+
+  #menu {
+    font-size: 40px;
+    display: flex;
+  }
+
+  #cancel {
+    font-size: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+
+  }
+  #table{
+    
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  tr{
+    font-size: 10px;
+    
+  }
+  td{
+    font-size: 10px;
+  }
+  thead td {
+    text-transform: capitalize;
+    text-decoration: underline;
+    font-size: 15px;
+    text-shadow: 0 0 15px aquamarine;
+}
+.cart {
+    display: flex;
+   
+    margin: 20px;
+}
+.container3 {
+    width: 100%;
+}
+.container3 .header {
+    margin-left: 0px;
+    padding: 10px;
+}
+.container4 button {
+    width: 60%;
+    background-color: rgb(10, 162, 109);
+    display: flex;
+    margin-top: 10px;
+    margin-left: 30%;
+    border: none;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background-color: rgb(255, 228, 196);
+    box-shadow: 0px 0px 10px rgb(244, 23, 214);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+  
+}
