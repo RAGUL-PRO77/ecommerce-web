@@ -212,7 +212,7 @@ body {
     height: 200px;
   }
 }
-@media(max-width:420px){
+@media(max-width:440px){
     #navbar {
     display: flex;
     flex-direction: column;

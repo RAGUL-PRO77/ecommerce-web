@@ -338,7 +338,7 @@ p {
   font-size: 14px;
  }
 }
-@media(max-width:420px){
+@media(max-width:440px){
   .display{
     
     align-items: center;
